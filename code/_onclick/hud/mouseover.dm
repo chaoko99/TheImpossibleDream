@@ -269,6 +269,7 @@
 		screen_loc_Y[1] = 1
 
 	screen_loc = "[screen_loc_X[1]]:[pix_X],[screen_loc_Y[1]]:[pix_Y]"
+	DEBUG("[screen_loc]")
 
 	moved = screen_loc
 
