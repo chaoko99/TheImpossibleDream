@@ -140,16 +140,6 @@
 "dB" = (
 /turf/closed,
 /area)
-"dC" = (
-/obj/effect/decal/cobbleedge{
-	dir = 1;
-	icon_state = "borderfall"
-	},
-/mob/living/simple_animal/hostile/retaliate/rogue/chicken{
-	gender = "male"
-	},
-/turf/open/floor/rogue/hay,
-/area/rogue/indoors)
 "dE" = (
 /obj/machinery/light/rogue/firebowl/stump,
 /turf/open/floor/rogue/dirt/road,
@@ -214,14 +204,6 @@
 /area/rogue/outdoors/exposed/bath/vault)
 "fE" = (
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors)
-"fL" = (
-/obj/effect/decal/cobbleedge{
-	dir = 10;
-	pixel_x = 0;
-	pixel_y = 0
-	},
-/turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors)
 "gP" = (
 /obj/structure/table/cooling,
@@ -553,10 +535,6 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors)
 "oC" = (
-/obj/effect/decal/cobbleedge{
-	dir = 1;
-	icon_state = "borderfall"
-	},
 /obj/effect/decal/mossy,
 /obj/structure/closet/crate/chest/wicker{
 	opened = 1
@@ -809,11 +787,6 @@
 /area/rogue/indoors)
 "ud" = (
 /obj/effect/landmark/deaths_door/exit,
-/obj/effect/decal/cobbleedge{
-	dir = 10;
-	pixel_x = 0;
-	pixel_y = 0
-	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors)
 "uk" = (
@@ -920,10 +893,6 @@
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/indoors)
 "xB" = (
-/obj/effect/decal/cobbleedge{
-	dir = 1;
-	icon_state = "borderfall"
-	},
 /obj/item/roguekey/merchant,
 /turf/open/floor/rogue/tile/masonic/single,
 /area/rogue/indoors)
@@ -1025,16 +994,6 @@
 /obj/structure/roguemachine/scrapper/tailor,
 /turf/open/floor/rogue/churchbrick,
 /area/rogue/indoors/town/bath)
-"Ah" = (
-/obj/effect/decal/cobbleedge{
-	dir = 1;
-	icon_state = "borderfall"
-	},
-/obj/structure/fluff/railing/wood{
-	dir = 4
-	},
-/turf/open/floor/rogue/hay,
-/area/rogue/indoors)
 "An" = (
 /obj/structure/table/wood{
 	icon_state = "longtable_mid";
@@ -1175,7 +1134,7 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains/decap)
 "CU" = (
-/turf/closed/wall/mineral/rogue/decostone/long,
+/turf/closed/wall/mineral/rogue/decostone,
 /area/rogue/indoors)
 "CZ" = (
 /turf/open/floor/rogue/dirt/road,
@@ -1242,10 +1201,6 @@
 /area/rogue/indoors)
 "EQ" = (
 /obj/effect/decal/mossy,
-/obj/effect/decal/cobbleedge{
-	dir = 1;
-	icon_state = "borderfall"
-	},
 /obj/structure/composter/halffull,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors)
@@ -1387,13 +1342,6 @@
 /obj/item/rogueweapon/eaglebeak/lucerne,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors)
-"IH" = (
-/obj/effect/decal/cobbleedge{
-	dir = 10;
-	pixel_y = 1
-	},
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors)
 "IJ" = (
 /obj/structure/table/vtable,
 /turf/open/floor/carpet/royalblack,
@@ -1419,12 +1367,6 @@
 /obj/structure/flora/roguegrass,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/bog/north)
-"KZ" = (
-/obj/effect/decal/cobbleedge{
-	dir = 5
-	},
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors)
 "Lg" = (
 /turf/open/floor/rogue/snow,
 /area/rogue/indoors/shelter/mountains/decap)
@@ -1455,10 +1397,6 @@
 /turf/closed/wall/mineral/rogue/decowood/vert,
 /area/rogue/indoors/town/physician)
 "Ml" = (
-/obj/effect/decal/cobbleedge{
-	dir = 1;
-	icon_state = "borderfall"
-	},
 /turf/open/floor/rogue/tile/masonic/single,
 /area/rogue/indoors/town/manor)
 "Mo" = (
@@ -1509,16 +1447,6 @@
 /obj/item/rogueweapon/sword/rapier/dec,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors)
-"MV" = (
-/obj/effect/decal/cobbleedge{
-	dir = 1;
-	icon_state = "borderfall"
-	},
-/obj/structure/handcart{
-	dir = 4
-	},
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors)
 "MX" = (
 /obj/structure/flora/roguegrass,
 /turf/open/floor/rogue/dirt/road,
@@ -1593,9 +1521,7 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors)
 "OI" = (
-/turf/closed/wall/mineral/rogue/decostone/long{
-	dir = 1
-	},
+/turf/closed/wall/mineral/rogue/decostone,
 /area/rogue/indoors/town/manor)
 "Pc" = (
 /obj/structure/table/wood{
@@ -1623,10 +1549,6 @@
 /turf/open/floor/rogue/blocks/newstone/alt,
 /area/rogue/indoors/town/physician)
 "PR" = (
-/obj/effect/decal/cobbleedge{
-	dir = 1;
-	icon_state = "borderfall"
-	},
 /obj/structure/well,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors)
@@ -1926,10 +1848,6 @@
 /turf/open/floor/rogue/blocks/newstone/alt,
 /area/rogue/outdoors/exposed/bath/vault)
 "ZJ" = (
-/obj/effect/decal/cobbleedge{
-	dir = 1;
-	icon_state = "borderfall"
-	},
 /obj/structure/fluff/nest,
 /obj/machinery/light/rogue/candle/l,
 /turf/open/floor/rogue/hay,
@@ -2364,7 +2282,7 @@ YX
 YX
 Lp
 xf
-dC
+rB
 rB
 Vx
 lS
@@ -2416,7 +2334,7 @@ YX
 YX
 ix
 zo
-Ah
+WK
 WK
 BS
 WK
@@ -2468,7 +2386,7 @@ YX
 YX
 zo
 zo
-MV
+Dh
 kl
 vq
 vq
@@ -3145,7 +3063,7 @@ hs
 Rz
 sJ
 fE
-IH
+rT
 vq
 vq
 vq
@@ -3459,7 +3377,7 @@ xy
 fE
 fE
 fE
-fL
+rT
 rT
 rT
 rT
@@ -3561,7 +3479,7 @@ xy
 xy
 xy
 rT
-KZ
+rT
 fE
 fE
 fE
@@ -3615,7 +3533,7 @@ Sc
 CZ
 dE
 rT
-KZ
+rT
 fE
 rT
 rT
