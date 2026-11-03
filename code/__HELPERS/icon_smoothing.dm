@@ -71,7 +71,7 @@ DEFINE_BITFIELD(smoothing_junction, list(
 	var/smooth_border = (smoothing_flags & SMOOTH_BORDER)
 	var/smooth_obj = (smoothing_flags & SMOOTH_OBJ)
 	var/smooth_edge = (smoothing_flags & SMOOTH_EDGE)
-
+	var/smooth_corner = (smoothing_flags & SMOOTH_EDGE_CORNER)
 #define SET_ADJ_IN_DIR(direction, direction_flag) \
 	set_adj_in_dir: { \
 		do { \
@@ -135,7 +135,7 @@ DEFINE_BITFIELD(smoothing_junction, list(
 		if(!isturf(src))
 			CRASH("[type] has SMOOTH_EDGE set but is not a turf!")
 		var/turf/T = src
-		T.set_neighborlays(new_junction)
+		T.set_neighborlays(new_junction, smooth_corner)
 		return
 
 	if(smoothing_flags & SMOOTH_BITMASK_CARDINALS || !(new_junction & (NORTH|SOUTH)) || !(new_junction & (EAST|WEST)))
@@ -164,7 +164,7 @@ DEFINE_BITFIELD(smoothing_junction, list(
 /atom/proc/set_smoothed_icon_state(new_junction)
 	icon_state = "[smoothing_icon]-[new_junction]"
 
-/turf/proc/set_neighborlays(new_junction)
+/turf/proc/set_neighborlays(new_junction, use_corner)
 	remove_neighborlays()
 
 	if(new_junction == NONE)
@@ -181,18 +181,18 @@ DEFINE_BITFIELD(smoothing_junction, list(
 
 	if(new_junction & WEST)
 		handle_edge_icon(WEST)
+	if(use_corner)
+		if(new_junction & NORTHWEST)
+			handle_edge_icon(NORTHWEST)
 
-	if(new_junction & NORTHWEST)
-		handle_edge_icon(NORTHWEST)
+		if(new_junction & NORTHEAST)
+			handle_edge_icon(NORTHEAST)
 
-	if(new_junction & NORTHEAST)
-		handle_edge_icon(NORTHEAST)
+		if(new_junction & SOUTHEAST)
+			handle_edge_icon(SOUTHEAST)
 
-	if(new_junction & SOUTHEAST)
-		handle_edge_icon(SOUTHEAST)
-
-	if(new_junction & SOUTHWEST)
-		handle_edge_icon(SOUTHWEST)
+		if(new_junction & SOUTHWEST)
+			handle_edge_icon(SOUTHWEST)
 /turf/proc/handle_edge_icon(dir)
 	if(neighborlay_self)
 		add_neighborlay(dir, neighborlay_self)

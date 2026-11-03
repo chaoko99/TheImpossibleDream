@@ -32,3 +32,4 @@
 /turf/closed/wall/mineral/rogue/pipe/line : /turf/closed/wall/mineral/rogue/pipe
 /turf/closed/wall/mineral/rogue/pipe/line/four : /turf/closed/wall/mineral/rogue/pipe
 /obj/effect/decal/cobbleedge : @DELETE
+/turf/open/floor/rogue/ruinedwood/herringbone_clear : /turf/open/floor/rogue/ruinedwood/neglected
