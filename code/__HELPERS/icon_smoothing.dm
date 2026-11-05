@@ -319,7 +319,7 @@ DEFINE_BITFIELD(smoothing_junction, list(
 		else if(length(neighbor_smoothing_groups))
 			for(var/target as anything in smoothing_list)
 
-				if(smoothing_list & neighbor_smoothing_groups)//				if(smoothing_list["[target]"] & neighbor_smoothing_groups["[target]"])
+				if(smoothing_list["[target]"] & neighbor_smoothing_groups["[target]"])
 					adjacencies["[testing_dir]"] = FALSE
 
 
