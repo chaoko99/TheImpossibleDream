@@ -2880,7 +2880,7 @@
 	dir = 1
 	},
 /obj/structure/fluff/wallclock,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor/grim)
 "asW" = (
 /obj/structure/table/wood/long_table/mid/alt,
@@ -5136,7 +5136,7 @@
 	sellprice = 8
 	},
 /obj/item/clothing/ring/emeralds,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor/grim)
 "aGF" = (
 /turf/open/floor/rogue/woodturned,
@@ -7006,7 +7006,7 @@
 /obj/effect/decal/edge{
 	color = "#3f3f3f"
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/under/town/basement/grim/townarenaview)
 "aTE" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/minotaur/axe,
@@ -8222,7 +8222,7 @@
 /obj/structure/fluff/railing/border,
 /obj/structure/bed/rogue/inn/double,
 /obj/item/bedsheet/rogue/fabric_double,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/grim)
 "bbv" = (
 /obj/structure/fluff/railing/border,
@@ -8394,7 +8394,7 @@
 	pixel_x = 2;
 	pixel_y = 5
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/magician)
 "bcu" = (
 /obj/structure/chair/wood/rogue/chair3,
@@ -9082,7 +9082,7 @@
 	pixel_x = -32;
 	pixel_y = 0
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/dwarfin)
 "bgR" = (
 /obj/structure/rack/rogue/shelf/big{
@@ -10249,7 +10249,7 @@
 /obj/effect/decal/wood/herringbone{
 	dir = 1
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor/grim)
 "boj" = (
 /obj/structure/bars/cemetery,
@@ -13557,7 +13557,7 @@
 	dir = 5;
 	layer = 4.2
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/dwarfin)
 "bKe" = (
 /obj/machinery/light/rogue/candle/off/r,
@@ -15562,7 +15562,7 @@
 	dir = 8
 	},
 /obj/machinery/light/rogue/candle/l,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/magician)
 "bXw" = (
 /obj/effect/decal/edge{
@@ -15820,7 +15820,7 @@
 /obj/effect/decal/wood/herringbone{
 	dir = 4
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor/grim)
 "bZe" = (
 /obj/structure/chair/stool/rogue,
@@ -21341,7 +21341,7 @@
 /obj/machinery/light/rogue/candle{
 	pixel_y = -32
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor/grim)
 "cJY" = (
 /obj/structure/closet/crate/coffin/keylock/psydung,
@@ -22763,7 +22763,7 @@
 	dir = 8
 	},
 /obj/machinery/light/rogue/candle/l,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor/grim)
 "cSR" = (
 /obj/structure/rack/rogue{
@@ -24267,7 +24267,7 @@
 /area/rogue/indoors)
 "dbO" = (
 /obj/structure/chair/wood/rogue,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor/grim)
 "dbP" = (
 /obj/structure/fluff/railing/wood{
@@ -28190,7 +28190,7 @@
 	pixel_x = 7;
 	pixel_y = 2
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/magician)
 "dBv" = (
 /obj/structure/chair/stool/rogue,
@@ -32523,7 +32523,7 @@
 "efs" = (
 /obj/structure/mannequin/male,
 /obj/item/clothing/suit/roguetown/shirt/dress/royal/princess,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/dwarfin)
 "efu" = (
 /obj/structure/flora/roguegrass,
@@ -34316,7 +34316,7 @@
 "eqH" = (
 /obj/item/clothing/suit/roguetown/shirt/tunic/noblecoat,
 /obj/structure/mannequin/male,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/dwarfin)
 "eqO" = (
 /obj/structure/flora/newtree,
@@ -36722,7 +36722,7 @@
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/beach/forest/hamlet/grim)
 "eFP" = (
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/under/town/basement/grim/townarenaview)
 "eFQ" = (
 /obj/effect/decal/edge{
@@ -39001,7 +39001,7 @@
 	dir = 4
 	},
 /obj/effect/decal/wood/herringbone,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/magician)
 "eUD" = (
 /obj/effect/decal/edge_corner{
@@ -41110,7 +41110,7 @@
 	pixel_x = 6;
 	pixel_y = 4
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/magician)
 "fij" = (
 /obj/structure/fermentation_keg/water,
@@ -42876,7 +42876,7 @@
 /obj/effect/decal/wood/herringbone{
 	dir = 5
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor/grim)
 "fuG" = (
 /obj/machinery/light/rogue/hearth,
@@ -43591,7 +43591,7 @@
 	pixel_y = -15;
 	redstone_id = "tourneybottom"
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/under/town/basement/grim/townarenaview)
 "fzE" = (
 /obj/effect/landmark/chimeric_calyx_spawner/fifteen,
@@ -44056,7 +44056,7 @@
 /obj/structure/table/wood/long_table{
 	dir = 1
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/under/town/basement/grim/townarenaview)
 "fCL" = (
 /obj/structure/bars/pipe{
@@ -47938,7 +47938,7 @@
 /obj/effect/decal/wood/herringbone{
 	dir = 1
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/magician)
 "gdO" = (
 /obj/structure/rack/rogue/shelf/big{
@@ -50038,7 +50038,7 @@
 /area/rogue/outdoors/bog/north/grim/ne)
 "grF" = (
 /obj/machinery/light/rogue/candle/r,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/under/town/basement/grim/townarenaview)
 "grH" = (
 /obj/structure/fluff/railing/border/north,
@@ -51497,7 +51497,7 @@
 /area/rogue/under/cave/his_vault)
 "gBF" = (
 /obj/structure/stairs,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/magician)
 "gBK" = (
 /obj/effect/decal/edge{
@@ -52262,7 +52262,7 @@
 /obj/structure/fluff/railing/border/west{
 	dir = 10
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/grim)
 "gGw" = (
 /obj/structure/fluff/railing/corner,
@@ -54995,7 +54995,7 @@
 /area/rogue/indoors/town/physician)
 "gYX" = (
 /obj/effect/decal/wood/herringbone,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor/grim)
 "gYZ" = (
 /obj/structure/chair/stool/rogue,
@@ -59346,7 +59346,7 @@
 	dir = 4
 	},
 /obj/structure/fluff/railing/corner/north_east,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor/grim)
 "hCC" = (
 /obj/item/natural/rock{
@@ -64361,7 +64361,7 @@
 /area/rogue/indoors/shelter)
 "ihz" = (
 /obj/structure/table/wood/long_table,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/under/town/basement/grim/townarenaview)
 "ihB" = (
 /mob/living/carbon/human/species/skeleton/npc/medium,
@@ -82290,7 +82290,7 @@
 "kvr" = (
 /obj/structure/mannequin/male/female,
 /obj/item/clothing/suit/roguetown/shirt/dress/gown/fallgown,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/dwarfin)
 "kvt" = (
 /turf/open/floor/rogue/grassyel,
@@ -84019,7 +84019,7 @@
 	},
 /area/rogue/outdoors/beach/north/grim)
 "kFT" = (
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/dwarfin)
 "kFZ" = (
 /obj/machinery/light/rogue/candle,
@@ -84030,7 +84030,7 @@
 	dir = 5
 	},
 /obj/effect/decal/wood/herringbone,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor/grim)
 "kGc" = (
 /obj/structure/table/wood/long_table/mid/alt,
@@ -85431,7 +85431,7 @@
 	dir = 1
 	},
 /obj/structure/fluff/railing/corner,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor/grim)
 "kPP" = (
 /obj/effect/decal/edge{
@@ -85737,7 +85737,7 @@
 	dir = 1
 	},
 /obj/machinery/light/rogue/candle,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/magician)
 "kRK" = (
 /obj/structure/fluff/railing/border/east,
@@ -87270,7 +87270,7 @@
 /area/rogue/under/cave/grimspyre/depths/ancientforge)
 "lbm" = (
 /obj/structure/table/wood/long_table/mid/alt,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/under/town/basement/grim/townarenaview)
 "lbn" = (
 /obj/effect/decal/cleanable/blood,
@@ -89149,7 +89149,7 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/exposed/under/sewer/grim)
 "loa" = (
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/magician)
 "lob" = (
 /obj/effect/decal/edge{
@@ -90445,7 +90445,7 @@
 	dir = 4
 	},
 /obj/machinery/light/rogue/candle/r,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/magician)
 "lwL" = (
 /obj/structure/roguerock,
@@ -94067,7 +94067,7 @@
 	dir = 8
 	},
 /obj/effect/decal/wood/herringbone,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor/grim)
 "lVH" = (
 /obj/structure/flora/rock/pile{
@@ -96709,7 +96709,7 @@
 /obj/effect/decal/wood/herringbone{
 	dir = 4
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/magician)
 "mnu" = (
 /obj/effect/decal/cleanable/blood/old,
@@ -99906,7 +99906,7 @@
 /area/rogue/under/cave/orcdungeon)
 "mIT" = (
 /obj/machinery/light/rogue/candle,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/under/town/basement/grim/townarenaview)
 "mIU" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/saiga/saigabuck/tame{
@@ -107317,7 +107317,7 @@
 /obj/machinery/light/rogue/torchholder{
 	dir = 1
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/dwarfin)
 "nHI" = (
 /obj/structure/bars/pipe{
@@ -107558,7 +107558,7 @@
 /obj/effect/decal/wood/herringbone{
 	dir = 8
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/magician)
 "nJL" = (
 /obj/structure/fluff/railing/border{
@@ -107741,7 +107741,7 @@
 /obj/effect/decal/wood/herringbone{
 	dir = 8
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor/grim)
 "nLs" = (
 /obj/machinery/light/rogue/candle/blue,
@@ -108750,7 +108750,7 @@
 /area/rogue/indoors/town/tavern/grim)
 "nSd" = (
 /obj/structure/chair/wood/rogue/fancy,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/under/town/basement/grim/townarenaview)
 "nSg" = (
 /obj/effect/decal/remains/saiga,
@@ -112336,7 +112336,7 @@
 	pixel_x = -6;
 	pixel_y = 20
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor/grim)
 "opV" = (
 /obj/structure/fluff/walldeco/church/line{
@@ -117284,7 +117284,7 @@
 /obj/machinery/light/rogue/candle{
 	pixel_y = -32
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/magician)
 "oVY" = (
 /obj/item/rope{
@@ -121092,7 +121092,7 @@
 "pux" = (
 /obj/structure/stairs,
 /obj/machinery/light/rogue/candle/r,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/magician)
 "puE" = (
 /obj/machinery/light/rogue/hearth,
@@ -124247,7 +124247,7 @@
 	pixel_x = 1;
 	pixel_y = 7
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/magician)
 "pOi" = (
 /obj/structure/vine{
@@ -124519,7 +124519,7 @@
 /obj/structure/curtain/red{
 	pixel_x = 32
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/grim)
 "pPQ" = (
 /obj/structure/closet/crate/roguecloset/inn/south,
@@ -127351,7 +127351,7 @@
 /obj/effect/decal/wood/herringbone{
 	dir = 5
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/magician)
 "qig" = (
 /obj/structure/fluff/railing/wood{
@@ -131712,7 +131712,7 @@
 /obj/structure/fluff/railing/border/west{
 	dir = 10
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/grim)
 "qLS" = (
 /obj/structure/fluff/walldeco/customflag{
@@ -132370,7 +132370,7 @@
 /area/rogue/indoors/town/physician)
 "qQm" = (
 /obj/structure/fluff/railing/wood,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/under/town/basement/grim/townarenaview)
 "qQq" = (
 /obj/machinery/light/rogue/candle/blue/r,
@@ -137350,7 +137350,7 @@
 "rxW" = (
 /obj/structure/mannequin/male/female,
 /obj/item/clothing/suit/roguetown/shirt/tunic/silktunic,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/dwarfin)
 "rxY" = (
 /turf/closed/mineral/random/rogue/high,
@@ -139483,7 +139483,7 @@
 	name = "Volf Pen";
 	redstone_id = "tourneybottom3"
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/under/town/basement/grim/townarenaview)
 "rMw" = (
 /obj/structure/mineral_door/wood/donjon{
@@ -143575,7 +143575,7 @@
 /turf/open/floor/rogue/tile/brownbrick/browner,
 /area/rogue/indoors/shelter)
 "slX" = (
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor/grim)
 "slZ" = (
 /obj/structure/flora/ausbushes/ppflowers,
@@ -149259,7 +149259,7 @@
 /area/rogue/under/underdark/grim)
 "sVg" = (
 /obj/structure/roguemachine/noticeboard/wall/bulletinboard,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/dwarfin)
 "sVi" = (
 /obj/machinery/light/rogue/campfire/densefire,
@@ -151425,7 +151425,7 @@
 /area/rogue/outdoors/woods/grim/northeast)
 "tki" = (
 /obj/effect/decal/wood/herringbone,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/magician)
 "tkj" = (
 /obj/structure/flora/roguetree/stump{
@@ -151909,7 +151909,7 @@
 	pixel_x = -6;
 	pixel_y = 14
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor/grim)
 "tnc" = (
 /obj/item/reagent_containers/food/snacks/grown/rogue/rosa_petals,
@@ -155532,7 +155532,7 @@
 	dir = 1
 	},
 /obj/effect/decal/wood/herringbone,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor/grim)
 "tKq" = (
 /obj/structure/fluff/walldeco/church/line,
@@ -156878,7 +156878,7 @@
 	dir = 1
 	},
 /obj/structure/fluff/wallclock,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor/grim)
 "tRR" = (
 /obj/structure/rack/rogue/shelf/big{
@@ -164526,7 +164526,7 @@
 	name = "Troll Pen";
 	redstone_id = "tourneybottom2"
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/under/town/basement/grim/townarenaview)
 "uOm" = (
 /obj/structure/fluff/walldeco/church/line{
@@ -164801,7 +164801,7 @@
 	pixel_x = 32
 	},
 /obj/structure/fluff/railing/corner,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor/grim)
 "uPN" = (
 /turf/open/water/pond,
@@ -168279,7 +168279,7 @@
 /obj/structure/stairs{
 	dir = 1
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/tavern/grim)
 "vms" = (
 /turf/open/floor/rogue/rooftop/green/east,
@@ -177809,7 +177809,7 @@
 	name = "Spider Pen";
 	redstone_id = "tourneybottom4"
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/under/town/basement/grim/townarenaview)
 "wvA" = (
 /obj/structure/closet/dirthole/closed/loot{
@@ -178997,7 +178997,7 @@
 /obj/effect/decal/wood/herringbone{
 	dir = 1
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor/grim)
 "wDf" = (
 /obj/effect/decal/edge{
@@ -182920,7 +182920,7 @@
 /obj/structure/fluff/railing/border{
 	dir = 1
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/dwarfin)
 "xcx" = (
 /obj/structure/rack/rogue/shelf/big{
@@ -183693,7 +183693,7 @@
 /obj/effect/decal/wood/herringbone{
 	dir = 8
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor/grim)
 "xhL" = (
 /obj/structure/flora/roguegrass/bush/westleach,

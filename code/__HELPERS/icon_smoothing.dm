@@ -306,23 +306,26 @@ DEFINE_BITFIELD(smoothing_junction, list(
 /turf/proc/verdantsmooth()
 	var/adjacencies = list()
 	var/turf/neighbortest //completely discard the existing adjacencies, they were calculated incorrectly.
-	for (var/testing_dir in list(NORTH, SOUTH, EAST, WEST, NORTHEAST, NORTHWEST, SOUTHEAST, SOUTHWEST))
+	var/list/dirs_to_check = smoothing_flags & SMOOTH_EDGE_CORNER ? GLOB.cardinals : GLOB.alldirs
+	for (var/testing_dir in dirs_to_check)
 		//first, set every dir to true because i don't know how to do this in the vardec
 		adjacencies["[testing_dir]"] = TRUE
 		neighbortest = get_step(src, testing_dir)
-		if(neighbortest ==null)
+		if(neighbortest == null)
 			continue
 		var/neighbor_smoothing_groups = neighbortest.smoothing_groups
-		if(length(neighbor_smoothing_groups))
+		if(type == neighbortest.type)
+			adjacencies["[testing_dir]"] = FALSE
+		else if(length(neighbor_smoothing_groups))
+			for(var/target as anything in smoothing_list)
 
-			if(length(smoothing_list & neighbor_smoothing_groups))
-				adjacencies["[testing_dir]"] = FALSE
-				maptext += "[adjacencies["[testing_dir]"]],"
+				if(smoothing_list & neighbor_smoothing_groups)//				if(smoothing_list["[target]"] & neighbor_smoothing_groups["[target]"])
+					adjacencies["[testing_dir]"] = FALSE
 
-/* 	if(smoothing_flags & SMOOTH_EDGE_CORNER)
+
+	if(smoothing_flags & SMOOTH_EDGE_CORNER)
 		for(var/i in ALL_CARDINALS) //if we have a cardinal match, we don't need our corners.
 			if(adjacencies["[i]"])
 				adjacencies["[turn(i,45)]"] = FALSE //Trim semicardinal to the right
-				adjacencies["[turn(i,-45)]"] = FALSE //Trim semicardinal to the left
-*/
+				adjacencies["[turn(i,-45)]"] = FALSE //Trim semicardinal to the leftw
 	return adjacencies

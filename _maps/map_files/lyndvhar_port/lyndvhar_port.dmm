@@ -18536,7 +18536,7 @@
 /obj/machinery/light/rogue/candle{
 	pixel_y = -32
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "guT" = (
 /obj/structure/bed/rogue/shit{
@@ -24455,7 +24455,7 @@
 /area/rogue/indoors/shelter/mountains/decap)
 "ioe" = (
 /obj/structure/table/wood/fancy/royalblue,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "ioh" = (
 /obj/machinery/light/rogue/torchholder/r,
@@ -31458,7 +31458,7 @@
 	pixel_x = -6;
 	pixel_y = 9
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "kEn" = (
 /obj/structure/flora/roguegrass/bush/wall,
@@ -32196,7 +32196,7 @@
 /obj/item/candle/candlestick/silver/lit{
 	pixel_y = 9
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "kSc" = (
 /obj/structure/bed/rogue/inn/wool,
@@ -32945,7 +32945,7 @@
 "leW" = (
 /obj/structure/globe,
 /obj/machinery/light/rogue/candle,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "leY" = (
 /turf/open/floor/rogue/cobblerock,
@@ -34253,7 +34253,7 @@
 /obj/item/roguestatue/gold{
 	pixel_y = 11
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "lAm" = (
 /obj/effect/landmark/quest_spawner/generic,
@@ -35134,7 +35134,7 @@
 "lPP" = (
 /obj/structure/telescope,
 /obj/machinery/light/rogue/candle,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "lPQ" = (
 /obj/structure/table/optable,
@@ -39765,7 +39765,7 @@
 /obj/item/roguestatue/steel{
 	pixel_y = 12
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "nxg" = (
 /obj/structure/chair/stool/rogue,
@@ -46703,7 +46703,7 @@
 /obj/item/candle/candlestick/silver/lit{
 	pixel_y = 9
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "pUB" = (
 /turf/open/floor/rogue/dirt,
@@ -50710,7 +50710,7 @@
 	specific_location = "Lord's Apartment";
 	dir = 1
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "rml" = (
 /obj/structure/fluff/railing/border/east,
@@ -54761,7 +54761,7 @@
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave/his_vault/four)
 "sJo" = (
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "sJD" = (
 /obj/structure/table/wood/fancy/black,
@@ -57445,7 +57445,7 @@
 	pixel_x = 8;
 	pixel_y = 7
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "tCM" = (
 /obj/effect/decal/carpet/kover_black{

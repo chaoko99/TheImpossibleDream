@@ -10477,7 +10477,7 @@
 "bVY" = (
 /obj/structure/telescope,
 /obj/machinery/light/rogue/candle,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "bVZ" = (
 /turf/closed/wall/mineral/rogue/tent{
@@ -12597,7 +12597,7 @@
 /area/rogue/outdoors/town/roofs)
 "cpH" = (
 /obj/structure/fluff/clock,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "cpO" = (
 /obj/structure/fluff/railing/border/west,
@@ -19985,7 +19985,7 @@
 	specific_location = "Lord's Apartment";
 	dir = 1
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "dJQ" = (
 /obj/structure/chair/stool/rogue,
@@ -35041,7 +35041,7 @@
 /area/rogue/indoors/town/church/chapel)
 "gsZ" = (
 /obj/item/roguebin/water,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "gtb" = (
 /obj/structure/fluff/railing/border,
@@ -39513,7 +39513,7 @@
 	pixel_x = 4;
 	pixel_y = -2
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "hju" = (
 /obj/structure/mineral_door/wood/violet{
@@ -63463,7 +63463,7 @@
 /obj/item/roguestatue/gold{
 	pixel_y = 11
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "lLp" = (
 /obj/structure/fluff/railing/wood,
@@ -77173,7 +77173,7 @@
 /obj/item/candle/candlestick/silver/lit{
 	pixel_y = 9
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "oor" = (
 /obj/item/needle/bronze{
@@ -77356,7 +77356,7 @@
 /obj/item/candle/candlestick/silver/lit{
 	pixel_y = 9
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "oqv" = (
 /obj/structure/mineral_door/wood/donjon{
@@ -78204,7 +78204,7 @@
 	pixel_y = 32
 	},
 /obj/structure/bed/rogue/inn/hay,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/outdoors/mountains)
 "oyQ" = (
 /obj/structure/closet/crate/roguecloset/inn/chest,
@@ -88641,7 +88641,7 @@
 /turf/open/floor/rogue/wood,
 /area/rogue/under/underdark/south)
 "qxt" = (
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "qxu" = (
 /obj/structure/fluff/railing/border/north,
@@ -112737,7 +112737,7 @@
 "uWZ" = (
 /obj/machinery/light/rogue/candle/l,
 /obj/machinery/gear_painter,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "uXa" = (
 /obj/machinery/gear_painter,
@@ -120912,7 +120912,7 @@
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/bog/skeletonfort)
 "wwH" = (
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/outdoors/mountains)
 "wwJ" = (
 /obj/structure/lever/wall{
@@ -122436,7 +122436,7 @@
 	pixel_x = -6;
 	pixel_y = 9
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "wLK" = (
 /turf/open/floor/rogue/blocks,
@@ -123459,7 +123459,7 @@
 	pixel_x = 8;
 	pixel_y = 7
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "wVy" = (
 /obj/effect/decal/edge{

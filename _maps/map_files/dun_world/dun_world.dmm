@@ -11015,7 +11015,7 @@
 /area/rogue/indoors/town/manor)
 "cfo" = (
 /obj/structure/fluff/clock,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "cfr" = (
 /obj/structure/stairs{
@@ -25077,7 +25077,7 @@
 /obj/item/candle/candlestick/silver/lit{
 	pixel_y = 9
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "eMF" = (
 /obj/structure/rack/rogue/shelf/biggest,
@@ -28084,7 +28084,7 @@
 /obj/item/candle/candlestick/silver/lit{
 	pixel_y = 9
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "fnF" = (
 /obj/structure/flora/roguetree/stump/burnt,
@@ -29313,7 +29313,7 @@
 /area/rogue/under/underdark/north)
 "fzc" = (
 /obj/item/roguebin/water,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "fze" = (
 /obj/effect/oneway/psy_bog_two{
@@ -42454,7 +42454,7 @@
 "hZI" = (
 /obj/machinery/light/rogue/candle/l,
 /obj/machinery/gear_painter,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "hZL" = (
 /obj/structure/table/wood/fancy/red,
@@ -45816,7 +45816,7 @@
 	pixel_x = 8;
 	pixel_y = 7
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "iEI" = (
 /obj/structure/mineral_door/wood{
@@ -46527,7 +46527,7 @@
 	pixel_y = 32
 	},
 /obj/structure/bed/rogue/inn/hay,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/outdoors/town)
 "iLE" = (
 /obj/effect/decal/edge{
@@ -51401,7 +51401,7 @@
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/inq/office)
 "jFy" = (
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "jFA" = (
 /obj/structure/table/church/end,
@@ -54730,7 +54730,7 @@
 /obj/item/roguestatue/gold{
 	pixel_y = 11
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "kkN" = (
 /obj/structure/far_travel,
@@ -58746,7 +58746,7 @@
 	pixel_x = -6;
 	pixel_y = 9
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "kWN" = (
 /obj/structure/chair/wood/rogue/fancy,
@@ -77845,7 +77845,7 @@
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/dwarfin)
 "oxG" = (
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/outdoors/town)
 "oxH" = (
 /turf/open/floor/carpet/red,
@@ -112853,7 +112853,7 @@
 "uSi" = (
 /obj/structure/telescope,
 /obj/machinery/light/rogue/candle,
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "uSk" = (
 /obj/structure/fermentation_keg/random/water,
@@ -126899,7 +126899,7 @@
 	pixel_x = 4;
 	pixel_y = -2
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "xAR" = (
 /obj/structure/flora/roguegrass/bush/wall,
@@ -130768,7 +130768,7 @@
 	specific_location = "Lord's Apartment";
 	dir = 1
 	},
-/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/turf/open/floor/rogue/ruinedwood/neglected,
 /area/rogue/indoors/town/manor)
 "ylE" = (
 /obj/structure/fluff/railing/border/north,
