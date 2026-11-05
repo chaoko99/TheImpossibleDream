@@ -59,6 +59,74 @@ DEFINE_BITFIELD(smoothing_junction, list(
 	else
 		CRASH("[type] called smooth_icon() without valid flags: [smoothing_flags]")
 
+
+/* /atom/proc/SET_ADJ_IN_DIR(direction, direction_flag, new_junction)
+	if(!smoothing_icon)
+		smoothing_icon = initial(icon_state)
+
+	// cache for sanic speed
+	var/smoothing_list = src.smoothing_list
+
+	var/smooth_border = (smoothing_flags & SMOOTH_BORDER)
+	var/smooth_obj = (smoothing_flags & SMOOTH_OBJ)
+	var/smooth_edge = (smoothing_flags & SMOOTH_EDGE)
+
+	set_adj_in_dir: { \
+		do { \
+			var/turf/neighbor = get_step(src, direction); \
+			if(!neighbor) { \
+				if(smooth_border) { \
+					new_junction |= direction_flag; \
+				}; \
+				return new_junction ; \
+			}; \
+			if(smooth_edge && type == neighbor.type) { \
+				return new_junction; \
+			}; \
+			if(smooth_obj) { \
+				for(var/atom/movable/thing as anything in neighbor) { \
+					if(!thing.anchored) { \
+						continue; \
+					}; \
+					if(!length(smoothing_list)) { \
+						if(type == thing.type) { \
+							new_junction |= direction_flag; \
+							return new_junction; \
+						}; \
+						continue; \
+					}; \
+					var/thing_smoothing_groups = thing.smoothing_groups; \
+					if(!length(thing_smoothing_groups)) { \
+						continue; \
+					}; \
+					for(var/target in smoothing_list) { \
+						if(smoothing_list[target] & thing_smoothing_groups[target]) { \
+							new_junction |= direction_flag; \
+							return new_junction; \
+						}; \
+					}; \
+				}; \
+			}; \
+			if(!length(smoothing_list)) { \
+				if(type == neighbor.type) { \
+					new_junction |= direction_flag; \
+				}; \
+				return new_junction; \
+			}; \
+			var/neighbor_smoothing_groups = neighbor.smoothing_groups; \
+			if(length(neighbor_smoothing_groups)) { \
+				for(var/target as anything in smoothing_list) { \
+					if(smoothing_list[target] & neighbor_smoothing_groups[target]) { \
+						new_junction |= direction_flag; \
+						return new_junction; \
+					}; \
+				}; \
+			}; \
+			return new_junction; \
+		} while(FALSE) \
+	} */
+
+
 /// Basic smoothing proc. The atom checks for adjacent directions to smooth with and changes the icon_state based on that.
 /atom/proc/smooth()
 	if(!smoothing_icon)
@@ -71,72 +139,18 @@ DEFINE_BITFIELD(smoothing_junction, list(
 	var/smooth_border = (smoothing_flags & SMOOTH_BORDER)
 	var/smooth_obj = (smoothing_flags & SMOOTH_OBJ)
 	var/smooth_edge = (smoothing_flags & SMOOTH_EDGE)
-	var/smooth_corner = (smoothing_flags & SMOOTH_EDGE_CORNER)
-#define SET_ADJ_IN_DIR(direction, direction_flag) \
-	set_adj_in_dir: { \
-		do { \
-			var/turf/neighbor = get_step(src, direction); \
-			if(!neighbor) { \
-				if(smooth_border) { \
-					new_junction |= direction_flag; \
-				}; \
-				break set_adj_in_dir; \
-			}; \
-			if(smooth_edge && type == neighbor.type) { \
-				break set_adj_in_dir; \
-			}; \
-			if(smooth_obj) { \
-				for(var/atom/movable/thing as anything in neighbor) { \
-					if(!thing.anchored) { \
-						continue; \
-					}; \
-					if(!length(smoothing_list)) { \
-						if(type == thing.type) { \
-							new_junction |= direction_flag; \
-							break set_adj_in_dir; \
-						}; \
-						continue; \
-					}; \
-					var/thing_smoothing_groups = thing.smoothing_groups; \
-					if(!length(thing_smoothing_groups)) { \
-						continue; \
-					}; \
-					for(var/target in smoothing_list) { \
-						if(smoothing_list[target] & thing_smoothing_groups[target]) { \
-							new_junction |= direction_flag; \
-							break set_adj_in_dir; \
-						}; \
-					}; \
-				}; \
-			}; \
-			if(!length(smoothing_list)) { \
-				if(type == neighbor.type) { \
-					new_junction |= direction_flag; \
-				}; \
-				break set_adj_in_dir; \
-			}; \
-			var/neighbor_smoothing_groups = neighbor.smoothing_groups; \
-			if(length(neighbor_smoothing_groups)) { \
-				for(var/target as anything in smoothing_list) { \
-					if(smoothing_list[target] & neighbor_smoothing_groups[target]) { \
-						new_junction |= direction_flag; \
-						break set_adj_in_dir; \
-					}; \
-				}; \
-			}; \
-			break set_adj_in_dir; \
-		} while(FALSE) \
-	}
-
-	for(var/direction as anything in GLOB.cardinals) //Cardinal case first.
-		SET_ADJ_IN_DIR(direction, direction)
-
+//this stupid fucking unreadable define is shifting my line numbers, making it hard to read shit.
 	if(smooth_edge)
 		if(!isturf(src))
 			CRASH("[type] has SMOOTH_EDGE set but is not a turf!")
 		var/turf/T = src
-		T.set_neighborlays(new_junction, smooth_corner)
+		T.set_neighborlays()
 		return
+#define SET_ADJ_IN_DIR(direction, direction_flag) 	set_adj_in_dir: { 		do { 			var/turf/neighbor = get_step(src, direction); 			if(!neighbor) { 				if(smooth_border) { 					new_junction |= direction_flag; 				}; 				break set_adj_in_dir; 			}; 			if(smooth_edge && type == neighbor.type) { 				break set_adj_in_dir; 			}; 			if(smooth_obj) { 				for(var/atom/movable/thing as anything in neighbor) { 					if(!thing.anchored) { 						continue; 					}; 					if(!length(smoothing_list)) { 						if(type == thing.type) { 							new_junction |= direction_flag; 							break set_adj_in_dir; 						}; 						continue; 					}; 					var/thing_smoothing_groups = thing.smoothing_groups; 					if(!length(thing_smoothing_groups)) { 						continue; 					}; 					for(var/target in smoothing_list) { 						if(smoothing_list[target] & thing_smoothing_groups[target]) { 							new_junction |= direction_flag; 							break set_adj_in_dir; 						}; 					}; 				}; 			}; 			if(!length(smoothing_list)) { 				if(type == neighbor.type) { 					new_junction |= direction_flag; 				}; 				break set_adj_in_dir; 			}; 			var/neighbor_smoothing_groups = neighbor.smoothing_groups; 			if(length(neighbor_smoothing_groups)) { 				for(var/target as anything in smoothing_list) { 					if(smoothing_list[target] & neighbor_smoothing_groups[target]) { 						;						new_junction |= direction_flag; 						break set_adj_in_dir; 					}; 				}; 			}; 			break set_adj_in_dir; 		} while(FALSE) 	}
+
+	for(var/direction as anything in GLOB.cardinals) //Cardinal case first.
+		SET_ADJ_IN_DIR(direction, direction)
+
 
 	if(smoothing_flags & SMOOTH_BITMASK_CARDINALS || !(new_junction & (NORTH|SOUTH)) || !(new_junction & (EAST|WEST)))
 		set_smoothed_icon_state(new_junction)
@@ -158,41 +172,45 @@ DEFINE_BITFIELD(smoothing_junction, list(
 
 	set_smoothed_icon_state(new_junction)
 
-	#undef SET_ADJ_IN_DIR
+#undef SET_ADJ_IN_DIR
 
 ///Changes the icon state based on the new junction bitmask.
 /atom/proc/set_smoothed_icon_state(new_junction)
 	icon_state = "[smoothing_icon]-[new_junction]"
 
 /turf/proc/set_neighborlays(new_junction, use_corner)
+
 	remove_neighborlays()
 
-	if(new_junction == NONE)
-		return
 
-	if(new_junction & NORTH)
+	var/list/adjacencies = verdantsmooth()
+
+
+	if(adjacencies["[NORTH]"])
+
 		handle_edge_icon(NORTH)
 
-	if(new_junction & SOUTH)
+	if(adjacencies["[SOUTH]"])
+
 		handle_edge_icon(SOUTH)
 
-	if(new_junction & EAST)
+
+	if(adjacencies["[EAST]"])
 		handle_edge_icon(EAST)
 
-	if(new_junction & WEST)
+	if(adjacencies["[WEST]"])
 		handle_edge_icon(WEST)
-	if(use_corner)
-		if(new_junction & NORTHWEST)
-			handle_edge_icon(NORTHWEST)
+//No need to check the corner flag, as verdantsmooth will have already eliminated them based on this.
+	if(adjacencies["[NORTHWEST]"])
+		handle_edge_icon(NORTHWEST)
+	if(adjacencies["[NORTHEAST]"])
+		handle_edge_icon(NORTHEAST)
+	if(adjacencies["[SOUTHEAST]"])
+		handle_edge_icon(SOUTHEAST)
+	if(adjacencies["[SOUTHWEST]"])
+		handle_edge_icon(SOUTHWEST)
 
-		if(new_junction & NORTHEAST)
-			handle_edge_icon(NORTHEAST)
 
-		if(new_junction & SOUTHEAST)
-			handle_edge_icon(SOUTHEAST)
-
-		if(new_junction & SOUTHWEST)
-			handle_edge_icon(SOUTHWEST)
 /turf/proc/handle_edge_icon(dir)
 	if(neighborlay_self)
 		add_neighborlay(dir, neighborlay_self)
@@ -240,18 +258,17 @@ DEFINE_BITFIELD(smoothing_junction, list(
 		return
 
 	var/image/overlay = image(icon, src, add, TURF_DECAL_LAYER, pixel_x = offset ? x : 0, pixel_y = offset ? y : 0 )
-
-	LAZYADDASSOC(neighborlay_list, "[dir]", overlay)
+	if(!neighborlay_list)
+		neighborlay_list = list()
+	neighborlay_list["[dir]"]=overlay
 	add_overlay(overlay)
 
 /turf/proc/remove_neighborlays()
-	if(!LAZYLEN(neighborlay_list))
+	if(!length(neighborlay_list))
 		return
-	for(var/key as anything in neighborlay_list)
-		cut_overlay(neighborlay_list[key])
-		qdel(neighborlay_list[key])
-		neighborlay_list[key] = null
-		LAZYREMOVE(neighborlay_list, key)
+	cut_overlay(neighborlay_list)
+	neighborlay_list = null //Just let it GC. Make a new one later.
+
 
 //Icon smoothing helpers
 /proc/smooth_zlevel(zlevel, now = FALSE)
@@ -285,155 +302,27 @@ DEFINE_BITFIELD(smoothing_junction, list(
 #undef DEFAULT_UNDERLAY_ICON
 #undef DEFAULT_UNDERLAY_ICON_STATE
 
-//No real better place to put this
-//Redefinitions of the diagonal directions so they can be stored in one var without conflicts
-#define N_NORTH		(1<<1)
-#define N_SOUTH		(1<<2)
-#define N_EAST		(1<<4)
-#define N_WEST		(1<<8)
-#define N_NORTHEAST	(1<<5)
-#define N_NORTHWEST	(1<<9)
-#define N_SOUTHEAST	(1<<6)
-#define N_SOUTHWEST	(1<<10)
-#define dir2neighbor(dir) (1<<(dir))
+//Get adjacencies and trim the ones that should not be used.
+/turf/proc/verdantsmooth()
+	var/adjacencies = list()
+	var/turf/neighbortest //completely discard the existing adjacencies, they were calculated incorrectly.
+	for (var/testing_dir in list(NORTH, SOUTH, EAST, WEST, NORTHEAST, NORTHWEST, SOUTHEAST, SOUTHWEST))
+		//first, set every dir to true because i don't know how to do this in the vardec
+		adjacencies["[testing_dir]"] = TRUE
+		neighbortest = get_step(src, testing_dir)
+		if(neighbortest ==null)
+			continue
+		var/neighbor_smoothing_groups = neighbortest.smoothing_groups
+		if(length(neighbor_smoothing_groups))
 
-/turf/proc/verdantsmooth(adjacencies, use_old_behavior)
-	if(!use_old_behavior)
-		adjacencies = null
-		var/turf/neighbortest //completely discard the existing adjacencies, they were calculated incorrectly.
-		for (var/testing_dir in list(NORTH, SOUTH, EAST, WEST, NORTHEAST, NORTHWEST, SOUTHEAST, SOUTHWEST))
-			neighbortest = get_step(src, testing_dir)
-			if(neighbortest ==null)
-				continue
-			if(istype(neighbortest, /turf/open/transparent/openspace))
-				continue
-			if(neighbortest.layer >= src.layer)
-				continue
-			if(neighbortest.type == src)//TODO: make this take a typecache..
-				continue
-			if(iswallturf(neighbortest))
-				continue
-			adjacencies |= dir2neighbor(testing_dir)
+			if(length(smoothing_list & neighbor_smoothing_groups))
+				adjacencies["[testing_dir]"] = FALSE
+				maptext += "[adjacencies["[testing_dir]"]],"
 
-	var/list/New
-	var/holder
-
-	for(var/A in neighborlay_list)
-		cut_overlay("[A]")
-		neighborlay_list -= A
-	var/usedturf
-	if(adjacencies & N_NORTH)
-		usedturf = get_step(src, NORTH)
-		if(isturf(usedturf))
-			var/turf/T = usedturf
-			if(neighborlay_override)
-				holder = "[neighborlay_override]-n"
-				LAZYADD(New, holder)
-				neighborlay_list += holder
-			else if(T.neighborlay)
-				holder = "[T.neighborlay]-n"
-				LAZYADD(New, holder)
-				neighborlay_list += holder
-	if(adjacencies & N_SOUTH)
-		usedturf = get_step(src, SOUTH)
-		if(isturf(usedturf))
-			var/turf/T = usedturf
-			if(neighborlay_override)
-				holder = "[neighborlay_override]-s"
-				LAZYADD(New, holder)
-				neighborlay_list += holder
-			else if(T.neighborlay)
-				holder = "[T.neighborlay]-s"
-				LAZYADD(New, holder)
-				neighborlay_list += holder
-	if(adjacencies & N_WEST)
-		usedturf = get_step(src, WEST)
-		if(isturf(usedturf))
-			var/turf/T = usedturf
-			if(neighborlay_override)
-				holder = "[neighborlay_override]-w"
-				LAZYADD(New, holder)
-				neighborlay_list += holder
-			else if(T.neighborlay)
-				holder = "[T.neighborlay]-w"
-				LAZYADD(New, holder)
-				neighborlay_list += holder
-	if(adjacencies & N_EAST)
-		usedturf = get_step(src, EAST)
-		if(isturf(usedturf))
-			var/turf/T = usedturf
-			if(neighborlay_override)
-				holder = "[neighborlay_override]-e"
-				LAZYADD(New, holder)
-				neighborlay_list += holder
-			else if(T.neighborlay)
-				holder = "[T.neighborlay]-e"
-				LAZYADD(New, holder)
-				neighborlay_list += holder
-
-	if(1)//if(smooth & SMOOTH_DIAGONAL)
-		if(adjacencies & N_NORTHEAST)
-			usedturf = get_step(src, NORTHEAST)
-			if(isturf(usedturf))
-				var/turf/T = usedturf
-				if(neighborlay_override)
-					holder = "[neighborlay_override]-ne"
-					LAZYADD(New, holder)
-					neighborlay_list += holder
-				else if(T.neighborlay)
-					holder = "[T.neighborlay]-ne"
-					LAZYADD(New, holder)
-					neighborlay_list += holder
-		if(adjacencies & N_NORTHWEST)
-			usedturf = get_step(src, NORTHWEST)
-			if(isturf(usedturf))
-				var/turf/T = usedturf
-				if(neighborlay_override)
-					holder = "[neighborlay_override]-nw"
-					LAZYADD(New, holder)
-					neighborlay_list += holder
-				else if(T.neighborlay)
-					holder = "[T.neighborlay]-nw"
-					LAZYADD(New, holder)
-					neighborlay_list += holder
-		if(adjacencies & N_SOUTHEAST)
-			usedturf = get_step(src, SOUTHEAST)
-			if(isturf(usedturf))
-				var/turf/T = usedturf
-				if(neighborlay_override)
-					holder = "[neighborlay_override]-se"
-					LAZYADD(New, holder)
-					neighborlay_list += holder
-				else if(T.neighborlay)
-					holder = "[T.neighborlay]-se"
-					LAZYADD(New, holder)
-					neighborlay_list += holder
-		if(adjacencies & N_SOUTHWEST)
-			usedturf = get_step(src, SOUTHWEST)
-			if(isturf(usedturf))
-				var/turf/T = usedturf
-				if(neighborlay_override)
-					holder = "[neighborlay_override]-sw"
-					LAZYADD(New, holder)
-					neighborlay_list += holder
-				else if(T.neighborlay)
-					holder = "[T.neighborlay]-sw"
-					LAZYADD(New, holder)
-					neighborlay_list += holder
-
-
-
-	if(New)
-		add_overlay(New)
-	return New
-
-
-
-#undef N_NORTH
-#undef N_SOUTH
-#undef N_EAST
-#undef N_WEST
-#undef N_NORTHEAST
-#undef N_NORTHWEST
-#undef N_SOUTHEAST
-#undef N_SOUTHWEST
+/* 	if(smoothing_flags & SMOOTH_EDGE_CORNER)
+		for(var/i in ALL_CARDINALS) //if we have a cardinal match, we don't need our corners.
+			if(adjacencies["[i]"])
+				adjacencies["[turn(i,45)]"] = FALSE //Trim semicardinal to the right
+				adjacencies["[turn(i,-45)]"] = FALSE //Trim semicardinal to the left
+*/
+	return adjacencies

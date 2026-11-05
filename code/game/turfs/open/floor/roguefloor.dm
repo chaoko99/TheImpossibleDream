@@ -63,7 +63,6 @@
 	return ..()
 
 /turf/open/floor/rogue/ruinedwood
-	icon_state = "boards-worn"
 	name = "wooden floorboards"
 	desc = "Interlocking wooden floorboards scratched with thousands of steps."
 	footstep = FOOTSTEP_WOOD
@@ -495,14 +494,6 @@
 	tiled_dirt = FALSE
 	landsound = 'sound/foley/jumpland/dirtland.wav'
 	slowdown = 1
-	//smooth = SMOOTH_TRUE
-	/*canSmoothWith = list(/turf/open/floor/rogue/grass,
-						/turf/open/floor/rogue/grassred,
-						/turf/open/floor/rogue/grassyel,
-						/turf/open/floor/rogue/grasscold,
-						/turf/open/floor/rogue/snowpatchy,
-						/turf/open/floor/rogue/snow,
-						/turf/open/floor/rogue/snowrough,)*/
 	neighborlay = "dirtedge"
 	muddy = FALSE
 	bloodiness = 20
@@ -521,16 +512,6 @@
 	tiled_dirt = FALSE
 	landsound = 'sound/foley/jumpland/dirtland.wav'
 	slowdown = 1
-	//smooth = SMOOTH_TRUE
-/* 	canSmoothWith = list(/turf/open/floor/rogue/grass,
-						/turf/open/floor/rogue/grassred,
-						/turf/open/floor/rogue/grassyel,
-						/turf/open/floor/rogue/grasscold,
-						/turf/open/floor/rogue/snowpatchy,
-						/turf/open/floor/rogue/snow,
-						/turf/open/floor/rogue/snowrough,
-						/turf/open/floor/rogue/AzureSand,
-						/turf/open/floor/rogue/dirt/winter) */
 	neighborlay = "dirtedge"
 	prettifyturf = TRUE
 	smoothing_flags = SMOOTH_EDGE
@@ -1680,7 +1661,7 @@
 						/turf/open/floor/rogue/grasscold,)*/
 	smoothing_flags = SMOOTH_EDGE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR +  SMOOTH_GROUP_FLOOR_FROZEN
-	smoothing_list = SMOOTH_GROUP_OPEN_FLOOR
+	smoothing_list = SMOOTH_GROUP_FLOOR_FROZEN
 
 	neighborlay = "ice"
 	/// Set by freeze_over(). Only seasonally-frozen ice thaws again - mapped ice is permanent.

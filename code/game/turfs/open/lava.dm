@@ -29,7 +29,7 @@
 /turf/open/lava/Initialize(mapload)
 	. = ..()
 	dir = pick(GLOB.cardinals)
-	verdantsmooth()
+//	verdantsmooth()
 
 /turf/open/lava/can_traverse_safely(atom/movable/traveler)
 	return FALSE

@@ -27,6 +27,7 @@
 
 	// cardinal_smooth()/verdantsmooth() only ever reads cardinal adjacency bits - see the same note
 	// on /turf/open/floor/rogue.
+	smoothing_groups = SMOOTH_GROUP_FLOOR_LIQUID
 //	canSmoothWith = list(/turf/closed/mineral,/turf/closed/wall/mineral/rogue, /turf/open/floor/rogue)
 	footstep = null
 	barefootstep = null
@@ -86,7 +87,7 @@
 	if(water_top_overlay)
 		water_top_overlay.color = water_color
 		water_top_overlay.icon_state = "top[water_level]"
-	verdantsmooth()
+//	verdantsmooth()
 /turf/open/water/Exited(atom/movable/AM, atom/newloc)
 	. = ..()
 	if(isliving(AM) && !AM.throwing)
