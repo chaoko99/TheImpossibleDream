@@ -32,8 +32,6 @@
 	. = ..()
 	if(winter_type || summer_type)
 		GLOB.seasonal_icon_turfs |= src
-	if(neighborlay)
-		verdantsmooth()
 
 /turf/open/floor/rogue/attack_right(mob/user)
 	if(snowy)
@@ -273,7 +271,7 @@
 	neighborlay = "grimshartedge"
 	smoothing_flags = SMOOTH_EDGE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_SAND
-	smoothing_list = SMOOTH_GROUP_FLOOR_SAND + SMOOTH_GROUP_FLOOR_LIQUID
+	smoothing_list = SMOOTH_GROUP_FLOOR_SAND + SMOOTH_GROUP_FLOOR_LIQUID + SMOOTH_GROUP_FLOOR_GRASS
 
 /turf/open/floor/rogue/snow
 	name = "snow"
