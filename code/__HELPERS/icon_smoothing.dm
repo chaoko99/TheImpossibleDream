@@ -214,13 +214,13 @@ DEFINE_BITFIELD(smoothing_junction, list(
 
 /turf/proc/handle_edge_icon(dir)
 	if(neighborlay_self)
-		add_neighborlay(dir, neighborlay_self, interior = TRUE)
+		add_neighborlay(dir, neighborlay_self)
 
 	if(neighborlay)
 		// Reverse dir because we are offsetting the overlay onto the adjacency
 		add_neighborlay(REVERSE_DIR(dir), neighborlay, TRUE)
 
-/turf/proc/add_neighborlay(dir, edgeicon, offset = FALSE, interior)
+/turf/proc/add_neighborlay(dir, edgeicon, offset = FALSE)
 	var/add
 	var/y = 0
 	var/x = 0
@@ -272,11 +272,7 @@ DEFINE_BITFIELD(smoothing_junction, list(
 		pixel_x = offset ? x : 0,
 		pixel_y = offset ? y : 0
 	)
-	if(interior)
-		overlay.pixel_x = 0
-		overlay.pixel_y = 0
-	neighborlay_list = list()
-	neighborlay_list["[dir]"]=overlay
+	LAZYADD(neighborlay_list, overlay)
 	add_overlay(overlay)
 
 /turf/proc/remove_neighborlays()

@@ -184,16 +184,14 @@
 
 
 
-/turf/open/water/verdantsmooth(adjacencies)
-	var/list/Yeah = ..()
+/turf/open/water/set_neighborlays(new_junction, use_corner)
+	..()
 	if(water_overlay)
-		water_overlay.cut_overlays(TRUE)
-		if(Yeah)
-			water_overlay.add_overlay(Yeah)
+		water_overlay.cut_overlays()
+		water_overlay.add_overlay(neighborlay_list)
 	if(water_top_overlay)
-		water_top_overlay.cut_overlays(TRUE)
-		if(Yeah)
-			water_top_overlay.add_overlay(Yeah)
+		water_top_overlay.cut_overlays()
+		water_top_overlay.add_overlay(neighborlay_list)
 
 /turf/open/water/Entered(atom/movable/AM, atom/oldLoc)
 	. = ..()

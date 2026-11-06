@@ -75,7 +75,7 @@
 	prettifyturf = TRUE
 	smoothing_flags = SMOOTH_EDGE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_WOOD
-	smoothing_list = SMOOTH_GROUP_MINERAL_WALLS + SMOOTH_GROUP_FLOOR_WOOD
+	smoothing_list = SMOOTH_GROUP_FLOOR_OPEN_SPACE + SMOOTH_GROUP_FLOOR_WOOD + SMOOTH_GROUP_MINERAL_WALLS
 //	canSmoothWith = list(/turf/closed/mineral/rogue, /turf/closed/mineral, /turf/closed/wall/mineral/rogue/stonebrick, /turf/closed/wall/mineral/rogue/wood, /turf/closed/wall/mineral/rogue/wooddark, /turf/closed/wall/mineral/rogue/decowood, /turf/closed/wall/mineral/rogue/decostone, /turf/closed/wall/mineral/rogue/stone, /turf/closed/wall/mineral/rogue/stone/moss, /turf/open/floor/rogue/cobble, /turf/open/floor/rogue/dirt, /turf/open/floor/rogue/grass)
 
 
@@ -171,7 +171,7 @@
 	prettifyturf = TRUE
 	smoothing_flags = SMOOTH_EDGE | SMOOTH_EDGE_CORNER
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_WOOD
-	smoothing_list = SMOOTH_GROUP_FLOOR_WOOD
+	smoothing_list = SMOOTH_GROUP_FLOOR_OPEN_SPACE + SMOOTH_GROUP_FLOOR_WOOD
 	//smooth = SMOOTH_MORE
 	//canSmoothWith = list(/turf/open/floor/rogue/woodturned,/turf/open/floor/carpet)
 
@@ -271,7 +271,7 @@
 	neighborlay = "grimshartedge"
 	smoothing_flags = SMOOTH_EDGE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_SAND
-	smoothing_list = SMOOTH_GROUP_FLOOR_SAND + SMOOTH_GROUP_FLOOR_LIQUID + SMOOTH_GROUP_FLOOR_GRASS
+	smoothing_list = SMOOTH_GROUP_FLOOR_LIQUID + SMOOTH_GROUP_FLOOR_OPEN_SPACE + SMOOTH_GROUP_FLOOR_GRASS + SMOOTH_GROUP_FLOOR_SAND
 
 /turf/open/floor/rogue/snow
 	name = "snow"
@@ -286,7 +286,7 @@
 	slowdown = 0
 	smoothing_flags = SMOOTH_EDGE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_SNOW
-	smoothing_list = SMOOTH_GROUP_FLOOR_SNOW + SMOOTH_GROUP_FLOOR_FROZEN
+	smoothing_list = SMOOTH_GROUP_FLOOR_OPEN_SPACE + SMOOTH_GROUP_FLOOR_SNOW + SMOOTH_GROUP_FLOOR_FROZEN
 	neighborlay = "snowedge"
 	spread_chance = 0
 	snowy = TRUE
@@ -329,7 +329,7 @@
 	smoothing_flags = SMOOTH_EDGE
 	prettifyturf = TRUE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_SNOW
-	smoothing_list = SMOOTH_GROUP_FLOOR_SNOW + SMOOTH_GROUP_FLOOR_FROZEN
+	smoothing_list = SMOOTH_GROUP_FLOOR_OPEN_SPACE + SMOOTH_GROUP_FLOOR_SNOW + SMOOTH_GROUP_FLOOR_FROZEN
 	neighborlay = "snowroughedge"
 	spread_chance = 0
 
@@ -349,7 +349,7 @@
 	prettifyturf = TRUE
 	smoothing_flags = SMOOTH_EDGE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_SNOW
-	smoothing_list = SMOOTH_GROUP_FLOOR_SNOW + SMOOTH_GROUP_FLOOR_FROZEN
+	smoothing_list = SMOOTH_GROUP_FLOOR_OPEN_SPACE + SMOOTH_GROUP_FLOOR_SNOW + SMOOTH_GROUP_FLOOR_FROZEN
 	neighborlay = "snowpatchy_grassedge"
 
 
@@ -514,7 +514,7 @@
 	prettifyturf = TRUE
 	smoothing_flags = SMOOTH_EDGE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_DIRT
-	smoothing_list = SMOOTH_GROUP_FLOOR_DIRT + SMOOTH_GROUP_FLOOR_GRASS + SMOOTH_GROUP_FLOOR_SAND
+	smoothing_list = SMOOTH_GROUP_FLOOR_OPEN_SPACE + SMOOTH_GROUP_FLOOR_DIRT + SMOOTH_GROUP_FLOOR_GRASS + SMOOTH_GROUP_FLOOR_SAND
 	winter_type = /turf/open/floor/rogue/dirt/winter
 	var/muddy = FALSE
 	var/bloodiness = 20
@@ -662,7 +662,7 @@
 	prettifyturf = TRUE
 	smoothing_flags = SMOOTH_EDGE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_DIRT_ROAD
-	smoothing_list = SMOOTH_GROUP_FLOOR_SNOW + SMOOTH_GROUP_FLOOR_GRASS + SMOOTH_GROUP_FLOOR_SAND
+	smoothing_list = SMOOTH_GROUP_FLOOR_OPEN_SPACE + SMOOTH_GROUP_FLOOR_GRASS + SMOOTH_GROUP_FLOOR_SNOW + SMOOTH_GROUP_FLOOR_SAND
 	winter_type = /turf/open/floor/rogue/dirt/road/winter
 	slowdown = 0
 
@@ -802,7 +802,7 @@
 	prettifyturf = TRUE
 	smoothing_flags = SMOOTH_EDGE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_DIRT
-	smoothing_list = SMOOTH_GROUP_FLOOR_DIRT
+	smoothing_list = SMOOTH_GROUP_FLOOR_OPEN_SPACE + SMOOTH_GROUP_FLOOR_DIRT
 
 
 /turf/open/floor/rogue/blocks
@@ -1054,7 +1054,7 @@
 	winter_type = /turf/open/floor/rogue/cobble/winter
 
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_STONE
-	smoothing_list = SMOOTH_GROUP_FLOOR_SNOW + SMOOTH_GROUP_FLOOR_WOOD + SMOOTH_GROUP_FLOOR_STONE + SMOOTH_GROUP_FLOOR_GRASS + SMOOTH_GROUP_FLOOR_SAND
+	smoothing_list = SMOOTH_GROUP_FLOOR_OPEN_SPACE + SMOOTH_GROUP_FLOOR_GRASS + SMOOTH_GROUP_FLOOR_SNOW + SMOOTH_GROUP_FLOOR_STONE + SMOOTH_GROUP_FLOOR_WOOD + SMOOTH_GROUP_FLOOR_SAND
 	prettifyturf = TRUE
 
 /// Same subtype-not-icon-swap approach as dirt/winter, kept for one shared SSseason code path.
@@ -1145,7 +1145,7 @@
 	smoothing_flags = SMOOTH_EDGE
 	prettifyturf = TRUE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_STONE
-	smoothing_list = SMOOTH_GROUP_FLOOR_SNOW + SMOOTH_GROUP_FLOOR_DIRT + SMOOTH_GROUP_FLOOR_STONE + SMOOTH_GROUP_FLOOR_GRASS
+	smoothing_list = SMOOTH_GROUP_FLOOR_OPEN_SPACE + SMOOTH_GROUP_FLOOR_DIRT + SMOOTH_GROUP_FLOOR_GRASS + SMOOTH_GROUP_FLOOR_SNOW + SMOOTH_GROUP_FLOOR_STONE + SMOOTH_GROUP_FLOOR_SAND
 
 
 
@@ -1530,7 +1530,7 @@
 						/turf/open/floor/rogue/grasscold,)*/
 	smoothing_flags = SMOOTH_EDGE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR +  SMOOTH_GROUP_FLOOR_FROZEN
-	smoothing_list = SMOOTH_GROUP_FLOOR_FROZEN
+	smoothing_list = SMOOTH_GROUP_FLOOR_OPEN_SPACE + SMOOTH_GROUP_FLOOR_FROZEN
 
 	neighborlay = "ice"
 	/// Set by freeze_over(). Only seasonally-frozen ice thaws again - mapped ice is permanent.
