@@ -28,13 +28,14 @@
 	// cardinal_smooth()/verdantsmooth() only ever reads cardinal adjacency bits - see the same note
 	// on /turf/open/floor/rogue.
 	smoothing_groups = SMOOTH_GROUP_FLOOR_LIQUID
+	smoothing_flags = SMOOTH_EDGE
 //	canSmoothWith = list(/turf/closed/mineral,/turf/closed/wall/mineral/rogue, /turf/open/floor/rogue)
 	footstep = null
 	barefootstep = null
 	clawfootstep = null
 	heavyfootstep = null
 	landsound = 'sound/foley/jumpland/waterland.wav'
-	neighborlay_override = "edge"
+	neighborlay_self = "edge"
 	var/water_color = "#6a9295"
 	var/water_reagent = /datum/reagent/water
 	var/water_reagent_purified = /datum/reagent/water // If put through a water filtration device, provides this reagent instead

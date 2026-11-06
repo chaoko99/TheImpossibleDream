@@ -34,3 +34,4 @@
 /obj/effect/decal/cobbleedge : @DELETE
 /turf/open/floor/rogue/ruinedwood/herringbone_clear : /turf/open/floor/rogue/ruinedwood/neglected
 /turf/open/floor/rogue/ruinedwood{icon_state = @ANY} : /turf/open/floor/rogue/ruinedwood
+/obj/effect/decal/mossy : @DELETE

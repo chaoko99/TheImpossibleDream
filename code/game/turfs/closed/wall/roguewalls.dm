@@ -457,7 +457,7 @@
 /turf/closed/wall/mineral/rogue/decostone/mossy
 	name = "decorated mossy stone wall"
 	desc = "There was much effort put into this wall a long time ago."
-	icon = 'icons/turf/smooth/walls/stone_moss.dmi'
+	icon = 'icons/turf/smooth/walls/stone_d_moss.dmi'
 	climbdiff = 4
 
 /turf/closed/wall/mineral/rogue/decostone/mossy/cand
@@ -476,7 +476,7 @@
 	icon_state = "decostone-cand-blue"
 
 /turf/closed/wall/mineral/rogue/decostone/mossy/red
-	icon_state = "decostone-b-red"
+	icon = 'icons/turf/smooth/walls/stone_d_moss_r.dmi'
 
 /turf/closed/wall/mineral/rogue/decostone/mossy/red/long
 	icon_state = "decostone-l-red"

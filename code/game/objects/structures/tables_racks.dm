@@ -488,64 +488,38 @@
 /obj/structure/table/wood/fancy
 	name = "fancy table"
 	desc = "A table draped with beautiful silks! Try not to stain it."
-	icon = 'icons/obj/structures.dmi'
+	icon = MAP_SWITCH('icons/obj/smooth_structures/fancy_table.dmi', 'icons/obj/structures.dmi')
 	icon_state = "fancy_table"
-
-	/*canSmoothWith = list(/obj/structure/table/wood/fancy,
-		/obj/structure/table/wood/fancy/black,
-		/obj/structure/table/wood/fancy/blue,
-		/obj/structure/table/wood/fancy/cyan,
-		/obj/structure/table/wood/fancy/green,
-		/obj/structure/table/wood/fancy/orange,
-		/obj/structure/table/wood/fancy/purple,
-		/obj/structure/table/wood/fancy/red,
-		/obj/structure/table/wood/fancy/royalblack,
-		/obj/structure/table/wood/fancy/royalblue)*/
-	var/smooth_icon = 'icons/obj/smooth_structures/fancy_table.dmi' // see Initialize()
-
-/obj/structure/table/wood/fancy/Initialize(mapload)
-	. = ..()
-	// Needs to be set dynamically because table smooth sprites are 32x34,
-	// which the editor treats as a two-tile-tall object. The sprites are that
-	// size so that the north/south corners look nice - examine the detail on
-	// the sprites in the editor to see why.
-	icon = smooth_icon
+	smoothing_flags = SMOOTH_BITMASK | SMOOTH_OBJ
 
 /obj/structure/table/wood/fancy/black
 	icon_state = "fancy_table_black"
-	smooth_icon = 'icons/obj/smooth_structures/fancy_table_black.dmi'
-
+	icon = MAP_SWITCH('icons/obj/smooth_structures/fancy_table_black.dmi', 'icons/obj/structures.dmi')
 /obj/structure/table/wood/fancy/blue
 	icon_state = "fancy_table_blue"
-	smooth_icon = 'icons/obj/smooth_structures/fancy_table_blue.dmi'
+	icon = MAP_SWITCH('icons/obj/smooth_structures/fancy_table_blue.dmi', 'icons/obj/structures.dmi')
 
 /obj/structure/table/wood/fancy/cyan
 	icon_state = "fancy_table_cyan"
-	smooth_icon = 'icons/obj/smooth_structures/fancy_table_cyan.dmi'
-
+	icon = MAP_SWITCH('icons/obj/smooth_structures/fancy_table_cyan.dmi', 'icons/obj/structures.dmi')
 /obj/structure/table/wood/fancy/green
 	icon_state = "fancy_table_green"
-	smooth_icon = 'icons/obj/smooth_structures/fancy_table_green.dmi'
-
+	icon = MAP_SWITCH('icons/obj/smooth_structures/fancy_table_green.dmi', 'icons/obj/structures.dmi')
 /obj/structure/table/wood/fancy/orange
 	icon_state = "fancy_table_orange"
-	smooth_icon = 'icons/obj/smooth_structures/fancy_table_orange.dmi'
-
+	icon = MAP_SWITCH('icons/obj/smooth_structures/fancy_table_orange.dmi', 'icons/obj/structures.dmi')
 /obj/structure/table/wood/fancy/purple
 	icon_state = "fancy_table_purple"
-	smooth_icon = 'icons/obj/smooth_structures/fancy_table_purple.dmi'
-
+	icon = MAP_SWITCH('icons/obj/smooth_structures/fancy_table_purple.dmi', 'icons/obj/structures.dmi')
 /obj/structure/table/wood/fancy/red
 	icon_state = "fancy_table_red"
-	smooth_icon = 'icons/obj/smooth_structures/fancy_table_red.dmi'
-
+	icon = MAP_SWITCH('icons/obj/smooth_structures/fancy_table_red.dmi', 'icons/obj/structures.dmi')
 /obj/structure/table/wood/fancy/royalblack
 	icon_state = "fancy_table_royalblack"
-	smooth_icon = 'icons/obj/smooth_structures/fancy_table_royalblack.dmi'
-
+	icon = MAP_SWITCH('icons/obj/smooth_structures/fancy_table_royalblack.dmi', 'icons/obj/structures.dmi')
 /obj/structure/table/wood/fancy/royalblue
 	icon_state = "fancy_table_royalblue"
-	smooth_icon = 'icons/obj/smooth_structures/fancy_table_royalblue.dmi'
+	icon = MAP_SWITCH('icons/obj/smooth_structures/fancy_table_royalblue.dmi', 'icons/obj/structures.dmi')
 
 /obj/structure/table/wood/betting
 	name = "betting table"
