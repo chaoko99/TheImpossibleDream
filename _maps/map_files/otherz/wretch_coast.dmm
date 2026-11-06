@@ -9900,9 +9900,7 @@
 /obj/item/rogueweapon/hammer/iron,
 /obj/machinery/light/rogue/candle/l,
 /obj/item/needle/aalloy,
-/turf/open/floor/rogue/ruinedwood{
-	icon_state = "weird1"
-	},
+/turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/vampire_manor)
 "So" = (
 /obj/structure/fluff/railing/corner/south_west,

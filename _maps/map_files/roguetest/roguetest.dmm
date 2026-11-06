@@ -4,12 +4,6 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods/north)
 "ac" = (
-/obj/effect/decal/mossy{
-	dir = 4
-	},
-/obj/effect/decal/mossy{
-	dir = 8
-	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors)
 "aq" = (
@@ -92,12 +86,6 @@
 /obj/item/clothing/under/roguetown/heavy_leather_pants,
 /turf/open/floor/rogue/grass,
 /area/rogue/indoors)
-"ce" = (
-/obj/effect/decal/mossy{
-	dir = 1
-	},
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors)
 "cf" = (
 /turf/closed/wall/mineral/rogue/stonebrick,
 /area/rogue/indoors/town/manor)
@@ -271,24 +259,12 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors)
 "ij" = (
-/obj/effect/decal/mossy{
-	dir = 4
-	},
-/obj/effect/decal/mossy{
-	dir = 8
-	},
 /obj/structure/flora/roguegrass/herb/random,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors)
 "il" = (
 /turf/closed/indestructible/rock,
 /area)
-"iq" = (
-/obj/effect/decal/mossy{
-	dir = 1
-	},
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors)
 "ix" = (
 /obj/structure/closet/crate/chest/old_crate,
 /obj/item/reagent_containers/food/snacks/grown/wheat,
@@ -535,7 +511,6 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors)
 "oC" = (
-/obj/effect/decal/mossy,
 /obj/structure/closet/crate/chest/wicker{
 	opened = 1
 	},
@@ -1200,7 +1175,6 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors)
 "EQ" = (
-/obj/effect/decal/mossy,
 /obj/structure/composter/halffull,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors)
@@ -1283,16 +1257,6 @@
 /obj/machinery/anvil,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/dwarfin)
-"GG" = (
-/obj/effect/decal/mossy{
-	dir = 8
-	},
-/obj/effect/decal/mossy{
-	dir = 4
-	},
-/obj/structure/flora/roguegrass/herb/random,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors)
 "GO" = (
 /turf/open/water/swamp/deep,
 /area/rogue/outdoors)
@@ -1416,15 +1380,6 @@
 /obj/item/reagent_containers/glass/bowl,
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors)
-"MA" = (
-/obj/effect/decal/mossy{
-	dir = 8
-	},
-/obj/effect/decal/mossy{
-	dir = 4
-	},
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors)
 "ME" = (
 /obj/structure/roguemachine/vaultbank/merchant,
 /turf/open/floor/rogue/blocks/newstone/alt,
@@ -1703,10 +1658,6 @@
 /obj/structure/table/wood/poker,
 /turf/open/floor/rogue/tile/masonic/single,
 /area/rogue/indoors)
-"Vv" = (
-/obj/effect/decal/mossy,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors)
 "Vx" = (
 /obj/structure/fluff/railing/wood,
 /turf/open/floor/rogue/hay,
@@ -2439,10 +2390,10 @@ lb
 gP
 tu
 EQ
-MA
-MA
-MA
-ce
+ac
+ac
+ac
+vq
 vq
 vq
 vq
@@ -2491,10 +2442,10 @@ lY
 yZ
 xf
 EQ
-MA
-MA
-MA
-ce
+ac
+ac
+ac
+vq
 vq
 vq
 vq
@@ -2543,10 +2494,10 @@ lg
 iD
 xf
 oC
-MA
-MA
 ac
-iq
+ac
+ac
+rT
 rT
 mq
 vq
@@ -2803,11 +2754,11 @@ jr
 PN
 sJ
 fE
-Vv
-GG
-GG
-GG
-ce
+rT
+ij
+ij
+ij
+vq
 vq
 Ug
 Ug
@@ -2855,11 +2806,11 @@ bc
 bc
 tX
 fE
-Vv
-GG
-GG
-GG
-ce
+rT
+ij
+ij
+ij
+vq
 vq
 iU
 Ug
@@ -2907,11 +2858,11 @@ bc
 bc
 tX
 fE
-Vv
-GG
-GG
+rT
 ij
-ce
+ij
+ij
+vq
 vq
 iU
 Ug
@@ -2959,11 +2910,11 @@ bc
 bc
 tX
 fE
-Vv
-GG
-GG
-GG
-ce
+rT
+ij
+ij
+ij
+vq
 vq
 FS
 Ug
@@ -3011,11 +2962,11 @@ yw
 ES
 sJ
 fE
-Vv
-GG
-GG
+rT
 ij
-ce
+ij
+ij
+vq
 vq
 FS
 Ug
