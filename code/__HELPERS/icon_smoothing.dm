@@ -249,7 +249,7 @@ DEFINE_BITFIELD(smoothing_junction, list(
 			x = -32
 		if(NORTHEAST)
 			add = "[edgeicon]-ne"
-			x = 32
+			x = -32
 			y = -32
 
 

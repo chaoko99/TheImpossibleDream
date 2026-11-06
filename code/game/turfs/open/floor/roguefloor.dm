@@ -671,7 +671,8 @@
 		pick_up_snowball(user)
 		return ..()
 	return
-
+	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_DIRT
+	smoothing_list = SMOOTH_GROUP_FLOOR_DIRT + SMOOTH_GROUP_FLOOR_GRASS + SMOOTH_GROUP_FLOOR_SAND
 
 /// Real subtype (not an icon swap) so mud/blood/water/dig-hole state on /dirt survives, and
 /// become_muddy()/update_water()'s initial(icon_state) dry-out still lands correctly. Sprite and

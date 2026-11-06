@@ -129,9 +129,9 @@
 	return ..()
 
 /turf/closed/wall/mineral/rogue/wooddark/window
+	icon = MAP_SWITCH('icons/turf/smooth/walls/wood_dark.dmi', 'icons/turf/window.dmi')
+	icon_state = MAP_SWITCH("wood_dark-0","subwindow")
 	name = "dark wood window"
-	icon = 'icons/turf/roguewall.dmi'
-	icon_state = "subwindow"
 	opacity = FALSE
 	max_integrity = 800
 
@@ -139,6 +139,10 @@
 	if(istype(mover) && ((mover.pass_flags & PASSTABLE) || (mover.pass_flags & PASSGRILLE)) )
 		return 1
 	return ..()
+/turf/closed/wall/mineral/rogue/wooddark/window/Initialize(mapload)
+	. = ..()
+	var/mutable_appearance/M = mutable_appearance('icons/turf/roguewall.dmi', "woodhole", layer = ABOVE_NORMAL_TURF_LAYER)
+	add_overlay(M)
 
 /turf/closed/wall/mineral/rogue/roofwall
 	name = "wooden wall"
@@ -213,9 +217,6 @@
 	burn_power = 20
 	spread_chance = 4
 
-/turf/closed/wall/mineral/rogue/decowood/Initialize(mapload)
-	. = ..()
-	dir = pick(GLOB.cardinals)
 
 /turf/closed/wall/mineral/rogue/decowood/vert
 	name = "decorated wooden wall"
@@ -272,8 +273,7 @@
 
 /turf/closed/wall/mineral/rogue/stone/window/Initialize(mapload)
 	. = ..()
-	icon_state = "stone"
-	var/mutable_appearance/M = mutable_appearance(icon, "stonehole", layer = ABOVE_NORMAL_TURF_LAYER)
+	var/mutable_appearance/M = mutable_appearance('icons/turf/roguewall.dmi', "stonehole", layer = ABOVE_NORMAL_TURF_LAYER)
 	add_overlay(M)
 
 /turf/closed/wall/mineral/rogue/stone/window/unbreakable

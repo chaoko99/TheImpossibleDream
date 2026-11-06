@@ -31,6 +31,7 @@ GLOBAL_DATUM_INIT(openspace_backdrop_one_for_all, /atom/movable/openspace_backdr
 //	canSmoothWith = list(/turf/closed/mineral,/turf/closed/wall/mineral/rogue, /turf/open/floor/rogue)
 	// on /turf/open/floor/rogue.
 	neighborlay_override = "staticedge"
+	smoothing_groups = SMOOTH_GROUP_FLOOR_OPEN_SPACE
 
 
 /turf/open/transparent/openspace/verdantsmooth(adjacencies)
