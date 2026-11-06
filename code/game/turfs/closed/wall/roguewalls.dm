@@ -130,7 +130,7 @@
 
 /turf/closed/wall/mineral/rogue/wooddark/window
 	icon = MAP_SWITCH('icons/turf/smooth/walls/wood_dark.dmi', 'icons/turf/window.dmi')
-	icon_state = MAP_SWITCH("wood_dark-0","subwindow")
+	icon_state = MAP_SWITCH("wood_dark","subwindow")
 	name = "dark wood window"
 	opacity = FALSE
 	max_integrity = 800
@@ -209,7 +209,6 @@
 	max_integrity = 1200
 	break_sound = 'sound/combat/hits/onwood/destroywalldoor.ogg'
 	attacked_sound = list('sound/combat/hits/onwood/woodimpact (1).ogg','sound/combat/hits/onwood/woodimpact (2).ogg')
-//	sheet_type = /obj/item/grown/log/tree/lumber
 	above_floor = /turf/open/floor/rogue/ruinedwood
 	baseturfs = /turf/open/floor/rogue/ruinedwood
 	neighborlay = "dirtedge"
@@ -217,6 +216,9 @@
 	burn_power = 20
 	spread_chance = 4
 
+/turf/closed/wall/mineral/rogue/decowood/Initialize(mapload)
+	. = ..()
+	dir = pick(GLOB.cardinals)
 
 /turf/closed/wall/mineral/rogue/decowood/vert
 	name = "decorated wooden wall"

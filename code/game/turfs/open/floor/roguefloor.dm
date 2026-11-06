@@ -91,7 +91,7 @@
 	neighborlay = "boards-diagonal-trim"
 
 /turf/open/floor/rogue/ruinedwood/chevron //I don't have a sprite for this.
-	icon_state = "boards-herringbone-ruined"
+	icon_state = "boards-chevron"
 	name = "floorboards"
 	desc = "Interlocking wooden floorboards."
 
@@ -1368,7 +1368,6 @@
 						/turf/open/floor/rogue/snow,
 						/turf/open/floor/rogue/snowrough,)*/*/
 	prettifyturf = TRUE
-
 /turf/open/floor/rogue/metal/barograte
 	icon_state = "barograte"
 /turf/open/floor/rogue/metal/barograte/open

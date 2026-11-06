@@ -27,8 +27,9 @@
 
 	// cardinal_smooth()/verdantsmooth() only ever reads cardinal adjacency bits - see the same note
 	// on /turf/open/floor/rogue.
-	smoothing_groups = SMOOTH_GROUP_FLOOR_LIQUID
 	smoothing_flags = SMOOTH_EDGE
+	smoothing_groups = SMOOTH_GROUP_FLOOR_LIQUID
+	smoothing_list = SMOOTH_GROUP_FLOOR_LIQUID
 //	canSmoothWith = list(/turf/closed/mineral,/turf/closed/wall/mineral/rogue, /turf/open/floor/rogue)
 	footstep = null
 	barefootstep = null

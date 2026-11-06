@@ -14,9 +14,8 @@
 	tiled_dirt = FALSE
 	landsound = 'sound/foley/jumpland/carpetland.wav'
 	spread_chance = 15
-	smoothing_list = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_CARPET
 	smoothing_groups = SMOOTH_GROUP_FLOOR_CARPET + SMOOTH_GROUP_OPEN_FLOOR
-
+	smoothing_list = SMOOTH_GROUP_FLOOR_CARPET
 
 /turf/open/floor/carpet/examine(mob/user)
 	. = ..()
